@@ -1,0 +1,124 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4ff, #f8fdff);
+  color: #877171;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #1d1f21, #343a40);
+  color: rgb(211, 98, 98);
+  text-align: center;
+  padding: 30px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav a {
+  text-decoration: none;
+  color: #ffc107;
+  font-weight: 500;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #ffffff;
+}
+
+/* Hero Section with Background Slider */
+.hero-section {
+  height: 80vh;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  animation: slideBackground 24s infinite ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 5px solid #1d1f21;
+}
+
+@keyframes slideBackground {
+  0%   { background-image: url('/static/img/slide1.jpg'); }
+  30%  { background-image: url('/static/img/slide2.jpg'); }
+  50%  { background-image: url('/static/img/slide3.jpg'); }
+  80%  { background-image: url('/static/img/slide4.jpg'); }
+  100% { background-image: url('/static/img/slide1.jpg'); }
+}
+
+.hero-section h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  font-weight: 500;
+  color: #f8f9fa;
+}
+
+/* Product Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgb(39, 37, 37);
+  color: #f8f8f8;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-img-top {
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #2575fc;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #1a5ddc;
+}
+
+/* Footer */
+footer {
+  background-color: #f1f3f5;
+  padding: 25px 0;
+  text-align: center;
+  color: #555;
+}
+
+footer a {
+  color: #2575fc;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
